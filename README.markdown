@@ -21,6 +21,11 @@ _A basic HTML form for adding a user (first name, email) to a "subscribers" tabl
 ## 📄 Overview
 
 **Simple PHP User Adder Form** is a minimal HTML web page, developed by Adrian Lesniak, designed to capture a user's first name and email address for addition to a "subscribers" database table. The form uses the HTTP POST method to submit data to a backend PHP script (`add_user.php`). A notable feature is a message on the page informing users about a pre-insert database trigger that executes before data is added to the "subscribers" table. The HTML page itself is unstyled and relies on basic HTML5 for form structure and `required` attribute validation.
+<br><br>
+<p align="center">
+  <img src="screenshots/1.gif" width="70%">
+</p>
+
 
 ## ✨ Key Features
 
@@ -39,9 +44,22 @@ _A basic HTML form for adding a user (first name, email) to a "subscribers" tabl
 
 ## 🖼️ Screenshots (Conceptual)
 
-**Coming soon!**
+_Screenshot of the simple HTML form as it appears in a browser, highlighting the input fields, submit button, and the note about the database trigger._
 
-_This section would ideally show a screenshot of the simple HTML form as it appears in a browser, highlighting the input fields, submit button, and the note about the database trigger._
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\7.jpg" width="300"/>
+  <img src="screenshots\8.jpg" width="300"/>
+  <img src="screenshots\9.jpg" width="300"/>
+  <img src="screenshots\10jpg" width="300"/>
+  <img src="screenshots\11.jpg" width="300"/>
+  <img src="screenshots\12jpg" width="300"/>
+</p>
 
 ## 🛠️ System & Backend Requirements
 
