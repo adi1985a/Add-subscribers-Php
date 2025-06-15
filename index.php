@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dodaj Użytkownika</title>
+    <title>Add User</title>
 </head>
 
 <body>
 
-    <h1>Przykład: Wyzwalacz przed dodaniem użytkownika</h1>
-    <h2>Dodaj użytkownika</h2>
+    <h1>Example: Trigger Before Adding User</h1>
+    <h2>Add User</h2>
 
     <form action="add_user.php" method="post">
-        <p>Imię:</p>
+        <p>First Name:</p>
         <input type="text" name="fname" placeholder="First Name" required>
         
         <p>Email:</p>
@@ -21,7 +21,7 @@
         <button type="submit" name="submit">Register Subscriber</button>
     </form>
 
-    <p>Po wciśnięciu "Register Subscriber" zostanie uruchomiony wyzwalacz przed dodaniem użytkownika do tabeli "subscribers".</p>
+    <p>After clicking "Register Subscriber", a trigger will be executed before adding the user to the "subscribers" table.</p>
 
 </body>
 </html>

@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $host = 'localhost';
     $dbname = 'test';
     $username = 'root';
-    $password = 'haslo';
+    $password = '';
 
     try 
     {
@@ -20,23 +20,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $stmt->bindParam(':email', $email);
         $stmt->execute();
 
-
-        echo "Dodano nowego użytkownika do bazy danych.";
+        echo "A new user has been added to the database.";
 
         $stmt_audit = $pdo->prepare("INSERT INTO audit_subscribers (subscriber_name, action_performed) VALUES (:subscriber_name, 'Insert a new subscriber')");
         $stmt_audit->bindParam(':subscriber_name', $subscriber_name);
         $stmt_audit->execute();
 
+        echo "<br/>First Name: ";
+        echo htmlspecialchars($subscriber_name);
+        echo "<br/>Email: ";
+        echo htmlspecialchars($email);
     } 
-    
     catch (PDOException $e) 
     {
-        echo "Błąd: " . $e->getMessage();
+        echo "Error: " . $e->getMessage();
     }
-    echo "<br/>Imie: ";
-    echo $subscriber_name;
-    echo "<br/>Email: ";
-    echo $email;
-    
 }
 ?>

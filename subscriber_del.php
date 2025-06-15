@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id']))
     $host = 'localhost';
     $dbname = 'test'; 
     $username = 'root';
-    $password = 'haslo';
+    $password = '';
 
     try 
     {
@@ -28,24 +28,24 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id']))
             $stmt->bindParam(':subscriber_name', $user['fname']); 
             $stmt->execute();
 
-            echo "Użytkownik został pomyślnie usunięty.";
+            echo "The user has been successfully deleted.";
         } 
         
         else 
         {
-            echo "Nie znaleziono użytkownika o podanym ID.";
+            echo "No user found with the given ID.";
         }
     } 
     
     catch (PDOException $e) 
     {
-        echo "Błąd: " . $e->getMessage();
+        echo "Error: " . $e->getMessage();
     }
 } 
 
 else 
 {
-    echo "Brak danych ID użytkownika do usunięcia.";
+    echo "No user ID data provided for deletion.";
 }
 
 ?>

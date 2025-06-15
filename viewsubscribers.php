@@ -2,20 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Lista Użytkowników</title>
+    <title>User List</title>
 </head>
 <body>
 
-    <h1>Wyświetl Użytkowników</h1>
-    <p>Delete - powoduje usunięcie użytkownika oraz uruchomienie wyzwalacza po usunięciu.</p>
-    <p>Edit - po edycji użytkownika zostanie uruchomiony wyzwalacz.</p>
+    <h1>View Users</h1>
+    <p>Delete - deletes the user and triggers the after delete event.</p>
+    <p>Edit - after editing the user, a trigger will be executed.</p>
 
     <?php
     
     $host = 'localhost';
     $dbname = 'test';
     $username = 'root';
-    $password = 'haslo';
+    $password = '';
 
     try 
     {
@@ -53,7 +53,7 @@
     } 
     catch (PDOException $e) 
     {
-        echo "Błąd: " . $e->getMessage();
+        echo "Error: " . $e->getMessage();
     }
     ?>
 

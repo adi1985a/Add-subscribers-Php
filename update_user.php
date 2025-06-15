@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $host = 'localhost';
     $dbname = 'test';
     $username = 'root';
-    $password = 'haslo';
+    $password = '';
 
     try 
     {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $stmt->bindParam(':id', $user_id);
         $stmt->execute();
 
-        echo "Zaktualizowano dane użytkownika.";
+        echo "User data has been updated.";
 
         
         $stmt_audit = $pdo->prepare("INSERT INTO audit_subscribers (subscriber_name, action_performed) VALUES (:subscriber_name, 'Updated a subscriber')");
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     } 
     catch (PDOException $e) 
     {
-        echo "Błąd: " . $e->getMessage();
+        echo "Error: " . $e->getMessage();
     }
 }
 ?>
