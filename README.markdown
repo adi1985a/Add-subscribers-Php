@@ -56,9 +56,9 @@ _Screenshot of the simple HTML form as it appears in a browser, highlighting the
   <img src="screenshots\7.jpg" width="300"/>
   <img src="screenshots\8.jpg" width="300"/>
   <img src="screenshots\9.jpg" width="300"/>
-  <img src="screenshots\10jpg" width="300"/>
+  <img src="screenshots\10.jpg" width="300"/>
   <img src="screenshots\11.jpg" width="300"/>
-  <img src="screenshots\12jpg" width="300"/>
+  <img src="screenshots\12.jpg" width="300"/>
 </p>
 
 ## 🛠️ System & Backend Requirements
