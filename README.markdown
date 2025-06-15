@@ -23,7 +23,7 @@ _A basic HTML form for adding a user (first name, email) to a "subscribers" tabl
 **Simple PHP User Adder Form** is a minimal HTML web page, developed by Adrian Lesniak, designed to capture a user's first name and email address for addition to a "subscribers" database table. The form uses the HTTP POST method to submit data to a backend PHP script (`add_user.php`). A notable feature is a message on the page informing users about a pre-insert database trigger that executes before data is added to the "subscribers" table. The HTML page itself is unstyled and relies on basic HTML5 for form structure and `required` attribute validation.
 <br><br>
 <p align="center">
-  <img src="screenshots/1.gif" width="70%">
+  <img src="screenshots/1.gif" width="85%">
 </p>
 
 
